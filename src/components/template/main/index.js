@@ -1,6 +1,6 @@
 import React from "react";
 
-const index = (children) => {
+const index = ({children}) => {
   return <main>{children}</main>;
 };
 
