@@ -1,37 +1,31 @@
 import client from "config/http/client";
+import axios from "axios";
 
 const stationApi = {
   report_no_login: () => {
-    var bodyFormData = new FormData();
-    bodyFormData.append("command", "reportNoLogin");
-    bodyFormData.append("val", "{}");
-    client({
-      method: "post",
-      url: "",
-      data: bodyFormData,
-      headers: {
-        "Content-Type": "multipart/form-data",
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    const data = {
+      command: "reportNoLogin",
+      val: {},
+    };
+    axios.post("/", data).then((response) => {
+      console.log(response);
+      return response
+    });
+  
   },
   get_matchdata_no_login: () => {
     var bodyFormData = new FormData();
     bodyFormData.append("command", "noLoginStationLogo");
     client({
       method: "post",
-      url: "",
+      url: "/",
       data: bodyFormData,
       headers: {
-        "Content-Type":
-          "multipart/form-data",
-        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "multipart/form-data",
       },
     })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      .then((res) => {})
+      .catch((err) => {});
   },
 };
 
