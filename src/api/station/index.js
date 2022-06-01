@@ -10,7 +10,7 @@ const stationApi = {
       url: "",
       data: bodyFormData,
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "multipart/form-data",
         "Access-Control-Allow-Origin": "*",
       },
     })
@@ -25,8 +25,8 @@ const stationApi = {
       url: "",
       data: bodyFormData,
       headers: {
-        // "Content-Type":
-        //   "multipart/form-data; boundary=<calculated when request is sent>",
+        "Content-Type":
+          "multipart/form-data",
         "Access-Control-Allow-Origin": "*",
       },
     })
