@@ -5,9 +5,4 @@
   padding: 0;
   margin: 0;
 }
-input,
-input:invalid,
-input:valid,input:focus-within {
-  outline: none;
-  background-color: transparent;
-}
+
