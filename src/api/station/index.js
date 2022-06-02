@@ -1,5 +1,4 @@
 import client from "config/http/client";
-// import axios from "axios";
 
 const stationApi = {
   report_no_login: async (setData, setIsLoading) => {
@@ -22,7 +21,6 @@ const stationApi = {
         "Content-Type": "multipart/form-data",
       },
     });
-    console.log(response);
     setData(response);
     setIsLoading(false);
     return response;
