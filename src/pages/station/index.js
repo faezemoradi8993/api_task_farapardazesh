@@ -17,7 +17,7 @@ const Index = () => {
     return <Loading type="spokes" color="green" />;
   } else {
     return (
-      <div className="flex w-full flex-col py-8 max-w-4xl mx-auto ">
+      <div className="flex w-full flex-col py-8 max-w-7xl mx-auto ">
         <Title data={titleData} />
         <table className="w-full align-middle mt-8">
           <tr className="text-white">
