@@ -1,5 +1,6 @@
 
-Open [this link](https://drive.google.com/file/d/18K5HE7eS9ayUOMnzfVkY6fFalTFoCkDR/view?usp=drivesdk) to view task.
+Open [this link](https://drive.google.com/file/d/18K5HE7eS9ayUOMnzfVkY6fFalTFoCkDR/view?usp=drivesdk) to view task details.
+My challenge was cors error i solve it with proxy in front
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
